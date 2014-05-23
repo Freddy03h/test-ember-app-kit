@@ -1,0 +1,10 @@
+<ul class="posts-listing">
+  {{#each post in controller}}
+    <li>
+      {{#link-to "post" post}}
+        {{post.title}}</li>
+      {{/link-to}}
+  {{else}}
+    <li>pas de posts… :-(</li>
+  {{/each}}
+</ul>

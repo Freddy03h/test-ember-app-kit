@@ -6,6 +6,12 @@ Router.map(function() {
   // this.resource('posts', function() {
   //   this.route('new');
   // });
+  this.resource('posts', function(){
+    this.resource('post', { path:'/:post_id' }, function(){
+      //this.route('edit');
+    });
+    //this.route('create');
+  });
 });
 
 export default Router;
