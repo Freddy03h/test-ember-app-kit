@@ -10,12 +10,14 @@ module.exports = function(server) {
         "id": 1,
         "title": "Rails is omakase",
         "comments": [1, 2],
-        "user" : "dhh"
+        "user" : "dhh",
+        "body" : "ferfgry fyergf regfy greuygf uyerg ufyer"
       }, {
         "id": 2,
         "title": "Ember is toto",
         "comments": [3, 4],
-        "user" : "dhc"
+        "user" : "dhc",
+        "body" : "cdjoenr foncoireniuner uihrevurhv u"
       }],
 
       "comments": [{
