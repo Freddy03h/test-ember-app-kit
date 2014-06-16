@@ -1,14 +1,14 @@
-{{#heart-layer-scrollable classNames="current"}}
-  <h2>{{title}}</h2>
-  <p>{{user}}</p>
-  <p>{{body}}</p>
-  <section class="comments">
-    <ul>
-    {{#each comment in comments}}
-      <li>
-        <div>{{comment.body}}</div>
-      </li>
-    {{/each}}
-    </ul>
-  </section>
-{{/heart-layer-scrollable}}
+{{#link-to-animated "posts" animations="main:slideRight"}}Back{{/link-to-animated}}
+
+<h2>{{title}}</h2>
+<p>{{user}}</p>
+<p>{{body}}</p>
+<section class="comments">
+  <ul>
+  {{#each comment in comments}}
+    <li>
+      <div>{{comment.body}}</div>
+    </li>
+  {{/each}}
+  </ul>
+</section>

@@ -12,6 +12,8 @@
     "ember-testing-httpRespond": "~0.1.1",
     "loader.js": "git://github.com/stefanpenner/loader.js",
     "ember-load-initializers": "git://github.com/stefanpenner/ember-load-initializers.git#0.0.1",
-    "heart": "git@github.com:Freddy03h/heart.git#0.2.0"
+    "heart": "git@github.com:Freddy03h/heart.git#0.2.1",
+    "ember-animated-outlet": "~1.0.0-beta.2",
+    "ember-animated-outlet-heart": "git@github.com:Freddy03h/ember-animated-outlet.git#master"
   }
 }

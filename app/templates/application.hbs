@@ -1,9 +1,7 @@
 <div class="layer">
     <div class="topbar">Topbar</div>
 
-    <div class="layer with-topbar with-bottombar layout-animation">
-      {{outlet}}
-    </div>
+    {{animated-outlet name="main" class="with-topbar with-bottombar"}}
 
     <div class="bottombar">Bottombar</div>
 </div>
