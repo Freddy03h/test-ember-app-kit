@@ -1,7 +1,17 @@
-<div class="layer">
-    <div class="topbar">Topbar</div>
+<div class="topbar">
+	{{outlet "menu-left"}}
 
-    {{animated-outlet name="main" class="with-topbar with-bottombar"}}
+	<p class="title">
+		{{title}}
+	</p>
 
-    <div class="bottombar">Bottombar</div>
+	{{outlet "menu-right"}}
+</div>
+
+{{animated-outlet name="main" class="with-topbar with-bottombar"}}
+
+<div class="bottombar">
+	{{#link-to-animated "index" animations="main:dissolve"}}Index{{/link-to-animated}}
+	|
+	{{#link-to-animated "posts" animations="main:dissolve"}}Posts{{/link-to-animated}}
 </div>
