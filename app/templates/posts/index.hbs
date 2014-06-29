@@ -2,7 +2,10 @@
   {{#each post in controller}}
     <li>
       {{#link-to-animated "post" post animations="main:slideLeft"}}
-        {{post.title}}
+        <span class="post-title">{{post.title}}</span>
+        {{#with post.category}}
+        <span {{bind-attr class=":category-label id"}}>{{title}}</span>
+        {{/with}}
       {{/link-to-animated}}
     </li>
   {{else}}

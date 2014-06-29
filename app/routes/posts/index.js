@@ -8,6 +8,11 @@ var PostsIndexRoute = Ember.Route.extend({
       outlet: "menu-right",
       into: "application" // important when using at root level
     });
+
+    this.render("categories/index", {
+      outlet: "extra",
+      into: "application" // important when using at root level
+    });
   }
 });
 

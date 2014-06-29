@@ -1,31 +1,86 @@
 /* Put your CSS here */
 html{
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.topbar{z-index: 4;}
+.bottombar{z-index: 3;}
+#categories-selection{z-index: 2;}
+.layout-animation{z-index: 1;}
+
+/****************/
+
 .topbar, .bottombar {
-	background-color: #333;
-	color:#EEE;
-	padding: 10px;
+  background-color: #333;
+  color:#EEE;
+  padding: 10px;
 }
 .topbar a, .bottombar a{
-	color:#EEE;
+  color:#EEE;
 }
 .topbar .title, .topbar .action{
-	display: inline-block;
-	margin:0;
-	padding:0;
+  display: inline-block;
+  margin:0;
+  padding:0;
 }
 .topbar .title{
-	padding-left: 10px;
+  padding-left: 10px;
 }
 .topbar .action{
-	-webkit-appearance: none;
-	border:none;
-	background-color: orange;
-	height:100%;
-	width:24px;
+  -webkit-appearance: none;
+  border:none;
+  background-color: orange;
+  height:100%;
+  width:24px;
 }
 
 .layout-animation > div{
-	background-color: white;
+  background-color: white;
+}
+
+.posts-listing, .categories-listing{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.posts-listing a:active{
+  background-color: #C8C7CC;
+  color:white;
+}
+
+.posts-listing li a, .categories-listing li{
+  display: block;
+  padding:12px;
+  border-top: solid #C8C7CC 1px;
+  text-decoration: none;
+  color:#333;
+}
+
+.posts-listing li:first-child a{
+  border:none;
+}
+
+.category-label{
+  float: right;
+  font-size: 11px;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.category-label.lang{
+  background-color: #3498db;
+}
+
+.category-label.fram{
+  background-color: #e74c3c;
+}
+
+.category-label.libr{
+  background-color: #f1c40f;
+}
+
+#categories-selection{
+  background-color: #eee;
 }

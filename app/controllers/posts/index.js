@@ -1,7 +1,7 @@
-var PostsController = Ember.ArrayController.extend({
+var PostsController = Ember.ArrayController.extend(Ember.Evented, {
   actions:{
     open: function(){
-      console.log('open action on postS');
+      this.trigger('open');
     }
   }
 });
